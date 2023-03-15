@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vh;
+  }
+
+#nav{
+    position: absolute;
+    top: 5px;
+    height: 5vh;
+    width : 40vw;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-image: url(/images/divBG2.gif);
+    filter: brightness(85%);
+}
+
+#content {
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    background-image: url(/images/divBG2.gif);
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+h1 {
+    margin-top: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    position: relative;
+    top: 25%;
+    left: 3%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.halftone-flicker {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" ><filter id="halftone"><feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="4" result="noise" /><feColorMatrix type="saturate" values="0" in="noise" result="mask" /><feComposite operator="in" in="mask" in2="SourceGraphic" /><feBlend mode="multiply" /></filter><rect width="100%" height="100%" filter="url(#halftone)" /></svg>');
+  }
+
+  #flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 20%;
+  }
+  
+  .item {
+    flex-basis: 30%;
+    text-align: center;
+    height: auto;
+  }
+  
+  .item img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  #mail{
+    max-width: 50%;
+  }
+
+  #mario{
+    max-width: 60%;
+  }
+  
+  .item h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+  }
+
+  #about, #contact{
+    position: relative;
+    top: 0.7vh;
+  }
+
+  #aboutBtn, #scheduleBtn, #contactBtn{
+    cursor: pointer;
+  }
+
+  #ux{
+    position: absolute;
+    right: 2%;
+    bottom: 15%;
+    filter: brightness(85%);
+  }
+
+  p, ul{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5rem;
+    text-align: left;
+  }
+
+  ul{
+    margin-bottom: 0.5rem;
+  }
+
+  #ul{
+    text-decoration: underline;
+  }
+
+  .arrow{
+    position: absolute;
+    right: 2%;
+    scale: 0.7;
+    top: 100%;
+  }
+
+    #aboutPage{
+        display: none;
+    }
+
+    #schedulePage{
+        display: none;
+    }
+
+    #contactPage{
+        display: none;
+    }
+ 
+ 
+    .arrow{
+        cursor: pointer;
+    }
+
+    h1{
+        line-height: 2rem;
+    }
+
+    #mobile-warning {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        text-align: center;
+      }
+      
+      #mobile-warning p {
+        color: #fff;
+        font-size: 24px;
+        margin-top: 20%;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: 'Press Start 2P', cursive;
+      }
+
+      .btn:hover{
+        background-color: lightslategray;
+      }
